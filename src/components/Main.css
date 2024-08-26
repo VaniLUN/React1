@@ -1,0 +1,66 @@
+#bar a{
+    background-color: rgb(224, 174, 107);
+    padding-left: 20px;
+    display: block;
+    height: 40px;
+    display: flex;
+    /* Используем Flexbox для выравнивания */
+    align-items: center;
+    /* Вертикальное выравнивание по центру */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    color: inherit;
+    /* Сохраняем цвет текста родителя */
+    font-family: inherit;
+    /* Сохраняем шрифт родителя */
+    cursor: default;
+}
+h1{
+    color: rgb(81, 92, 55);
+}
+/* #second{
+    max-height: 300px;
+} */
+.bar-content{
+    /* transition: max-height, ease-in-out, 0.5s; */
+    /* max-height: 200px; */
+    overflow: hidden;
+}
+.bar-transition-enter {
+    max-height: 0;
+}
+  
+.bar-transition-enter-active {
+    max-height: 150px; /* или значение, которое подходит для вашего контента */
+    transition: max-height 0.3s ease-in;
+}
+  
+.bar-transition-exit {
+    max-height: 150px; /* или значение, которое подходит для вашего контента */
+}
+  
+.bar-transition-exit-active {
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+/* .close{
+    max-height: 0px;
+    overflow: hidden;
+    
+}
+.open{
+    max-height: 200px;
+    
+} */
+#first{
+    height: 130px;
+    position: relative;
+    background-color: rgb(206, 255, 91);
+}
+.Button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+}
